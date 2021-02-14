@@ -1,0 +1,26 @@
+
+.friendsWrapper {
+    margin: 50px 0;
+}
+
+.friendsWrapper h2 {
+    color: white;
+}
+
+.friends {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
+.oneFriend p {
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+.oneFriend img {
+    width: 49px;
+    height: 49px;
+    border-radius: 50px;
+}

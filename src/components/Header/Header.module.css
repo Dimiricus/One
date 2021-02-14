@@ -1,9 +1,11 @@
 .header {
     grid-area: h;
-    background: green;
+    background: rgb(140 108 88 / 14%);
+    padding: 8.5px 20px;
+    position: relative;
     overflow: hidden;
   }
   
   .header img {
-    width: 125px;
+    width: 100px;
   }

@@ -1,17 +1,20 @@
 import React from 'react';
 import MyPosts from './My_posts/MyPosts.jsx';
 import s from './Profile.module.css';
+import ProfileInfo from './ProfileInfo/ProfileInfo.jsx';
 
-const Profile = () => {
+
+const Profile = (props) => {
+
+  
+
     return (
       <div className={s.content}>
-        <div>
-          <img src="./img/forest-bathing.jpg" />
-        </div>
-        <div>
-          ava + description
-        </div>
-        <MyPosts />
+        <ProfileInfo />
+        <MyPosts data={props.profilePage.posts} 
+                 addPost={props.addPost} 
+                 newPostText={props.profilePage.newPostText}
+                 uppdatePostText={props.uppdatePostText}/>
       </div>
     );
 }

@@ -1,0 +1,23 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.torsion {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  right: 120px;
+  top: -140px;
+  border: 2px solid black;
+  z-index: -5;
+  opacity: .8;
+  filter: blur(6px);
+  animation: rotate 6s linear infinite;
+  -webkit-animation: rotate 6s linear infinite;
+}
